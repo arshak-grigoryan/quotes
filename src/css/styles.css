@@ -1,0 +1,60 @@
+@import './randomQuotes.css';
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+p, h2 {
+  margin: 0;
+}
+p {
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+h2 {
+  font-size: 16px;
+  text-align: end;
+}
+.quotes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+.box {
+  margin: 20px;
+  border-radius: 6px;
+  width: 320px;
+  background: #fff;
+  transition: .5s;
+  box-sizing: border-box;
+  padding: 16px;
+  box-shadow: -3px 6px 12px rgba(0,0,0,.2);
+}
+.quotes .box:hover {
+  box-shadow: -9px 18px 36px rgba(0,0,0,.2);
+}
+.searchElement {
+  padding: 20px;
+  text-align: center;
+}
+.quoteInput {
+  font-size: 16px;
+  padding: 12px;
+}
+.quoteInput[type=text] {
+  min-width: 80px;
+  width: 240px;
+}
+.quoteInput[type=button] {
+  cursor: pointer;
+  width: 80px;
+}
+
+.nothingFound p {
+  font-size: 15px;
+}
