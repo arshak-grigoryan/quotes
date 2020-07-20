@@ -12,7 +12,7 @@ function check(arr, str) {
 export default class Model {
   constructor() {
     this.quotes = [];
-    this.randomRequestNumbers = 16
+    this.randomRequestNumbers = 8
   }
 
   init() {
