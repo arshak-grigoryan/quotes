@@ -5,13 +5,9 @@ import { GENRES } from './data/genres.js';
 
 let API
 export default class SearchData {
-    constructor (QUOTES, AUTHORS, GENRES) {
+    constructor () {
         if (API instanceof SearchData) { return API}
         else {return this}
-
-        // this.quotes = QUOTES
-        // this.author = AUTHORS
-        // this.genres = GENRES 
     }
 
     async getRandomQuote() {
@@ -156,6 +152,6 @@ export default class SearchData {
     //   }
 }
 
-API = new SearchData(QUOTES, AUTHORS, GENRES)
+API = new SearchData()
 
 export { API }
