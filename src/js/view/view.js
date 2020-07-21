@@ -16,6 +16,12 @@ export default class View {
     const searchElement = createEL({tag:'div', parentEl:searchWrapper,className: 'searchElement'})
     const searchForm = createEL({tag:'form', parentEl: searchElement})
     const inputText = createEL({tag:'input', parentEl: searchForm, className: 'quoteInput', attributes: {'type': 'text'}}) 
+    inputText.addEventListener("keydown", e => {
+      if(e.keyCode === 13) { 
+        this.onSearchQuotes(e.target.value)
+        event.preventDefault()
+      }
+    })
     const inputButton = createEL({tag:'input', parentEl: searchForm, className: 'quoteInput', attributes: {'type': 'button', 'value': 'search'}}) 
     inputButton.addEventListener('click', () => this.onSearchQuotes(document.getElementsByClassName('quoteInput')[0].value))
   }
