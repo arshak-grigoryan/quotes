@@ -80,7 +80,6 @@ export default class View {
       val.remove()
     }
     const elNothingFound = document.getElementsByClassName("nothingFound")[0]
-    console.log(elNothingFound)
     if( !elNothingFound ) {
       const elDiv = createEL({tag:'div', parentEl:this.randomQuotes, className:'nothingFound'})
       const elP = createEL({tag:'p', parentEl:elDiv, content:`Not found ${res}`})
