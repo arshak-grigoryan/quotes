@@ -18,8 +18,6 @@ export default class Model {
   init() {
     API.getSomeRandomQuotes(API.getRandomQuote, this.randomRequestNumbers).then(quotes => this.changeQuotes(quotes));
   }
-
-  // private only for model
   
   changeQuotes(quotes) {
     this.quotes = quotes;
