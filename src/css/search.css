@@ -1,0 +1,20 @@
+.searchElement {
+    padding: 20px;
+    text-align: center;
+  }
+  .quoteInput {
+    font-size: 16px;
+    padding: 12px;
+  }
+  .quoteInput[type=text] {
+    min-width: 80px;
+    width: 240px;
+  }
+  .quoteInput[type=button] {
+    cursor: pointer;
+    width: 80px;
+  }
+  
+  .nothingFound p {
+    font-size: 15px;
+  }
