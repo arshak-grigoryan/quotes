@@ -1,5 +1,6 @@
 import Model from './model.js'
 import View  from './view/view.js'
+import css from '../css/styles.css'
 
 class Controller {
   constructor(model, view) {
