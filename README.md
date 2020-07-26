@@ -18,7 +18,7 @@ $ npm start
 ### Dev
 Run application in development mode
 ```sh
-$ npm run DEV
+$ npm run dev
 ```
 
 ### Build
