@@ -1,4 +1,4 @@
-import { createEL, createQuotesElement } from './viewHelpers.js'
+import { createEL, createQuotesElement } from './viewHelpers'
 
 export default class View {
   constructor() {
