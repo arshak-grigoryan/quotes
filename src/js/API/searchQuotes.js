@@ -1,7 +1,8 @@
 
-import { QUOTES } from './data/quotes.js';
-import { AUTHORS } from './data/authors.js';
-import { GENRES } from './data/genres.js';
+import { QUOTES } from './data/quotes';
+import { AUTHORS } from './data/authors';
+import { GENRES } from './data/genres';
+
 
 let API
 export default class SearchData {
@@ -70,7 +71,7 @@ export default class SearchData {
 
     getQuotesByAuthor (author) {
         const authorQuotes = []
-        QUOTES.quotes.forEach(q => {
+        QUOTES.forEach(q => {
             if(q.author === author) {
                 authorQuotes.push(q)
             }
@@ -80,7 +81,7 @@ export default class SearchData {
 
     getQuotesByGenre (genre) {
         const authorQuotes = []
-        QUOTES.quotes.forEach(q => {
+        QUOTES.forEach(q => {
             if(q.genre === genre) {
                 authorQuotes.push(q)
             }
@@ -88,14 +89,10 @@ export default class SearchData {
         return authorQuotes
     }
 
-    getPhrase (str) {
-
-    }
-
     getQuotesByPhrase (str) {
         let nstr = str.trim().toLowerCase()
         let res = []
-        QUOTES.quotes.forEach(quote => {
+        QUOTES.forEach(quote => {
             if(quote["text"]){
                 if(quote["text"].includes(nstr)) {
                     res.push(quote)
@@ -119,6 +116,7 @@ export default class SearchData {
             return {searchValue:str, result:null}
         }
     }
+    
     // foo() {
     //     const authors = {}
     //     const genres = new Set()
@@ -127,7 +125,7 @@ export default class SearchData {
     //     for(let i = 100; i > 0; i--) {
     //         authors[this.AUTHORS[i]] = {}
     //     }
-    //     this.QUOTES.quotes.forEach(({author, genre='general', text}) => {
+    //     this.QUOTES.forEach(({author, genre='general', text}) => {
     //         // skip quote if auth is not taken
     //         if (!authors[author]) {
     //             return;

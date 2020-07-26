@@ -1,4 +1,4 @@
-import { API } from './API/searchQuotes.js'
+import { API } from './API/searchQuotes'
 
 function check(arr, str) {
   for (const quote of arr) {

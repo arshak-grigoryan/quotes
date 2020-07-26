@@ -1,6 +1,6 @@
-import Model from './model.js'
-import View  from './view/view.js'
-import css from '../css/styles.css'
+import Model from './model'
+import View  from './view/view'
+import '../css/styles'
 
 class Controller {
   constructor(model, view) {
