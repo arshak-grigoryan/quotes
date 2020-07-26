@@ -1,7 +1,7 @@
 {
   "name": "quotes",
   "version": "1.0.0",
-  "description": "https://arshak-grigoryan.github.io/quotes/",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --mode development",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arshak-grigoryan/quotes.git"
+    "url": "git+https://github.com/arshak-grigoryan/Quotes.git"
   },
   "author": "",
   "license": "ISC",
