@@ -1,8 +1,12 @@
+let QUOTES, AUTHORS, GENRES
 
-import { QUOTES } from './data/quotes';
-import { AUTHORS } from './data/authors';
-import { GENRES } from './data/genres';
+async function loadData () {
+    QUOTES = (await import('./data/quotes')).QUOTES
+    AUTHORS = (await import('./data/authors')).AUTHORS
+    GENRES = (await import('./data/genres')).GENRES
+}
 
+loadData()
 
 let API
 export default class SearchData {
