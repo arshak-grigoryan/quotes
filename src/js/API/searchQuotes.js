@@ -18,10 +18,10 @@ export default class SearchData {
     async getRandomQuote() {
         try {
             const res = await fetch(
-            "https://quote-garden.herokuapp.com/api/v2/quotes/random"
+            "https://quote-garden.herokuapp.com/api/v3/quotes/random"
             );
             const json = await res.json();
-            return json.quote;
+            return json.data[0];
         } catch (err) {
             console.error(err);
         }
