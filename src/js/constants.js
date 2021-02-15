@@ -1,0 +1,1 @@
+export const RANDOM_QUOTES_COUNT = 12

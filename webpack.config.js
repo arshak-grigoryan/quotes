@@ -60,7 +60,7 @@ module.exports = {
     entry: {
         main:[
             '@babel/polyfill', 
-            './js/controller.js'
+            './js/presenter.js'
         ]
     },
     output: {
@@ -95,7 +95,7 @@ module.exports = {
             }
         ]
     },
-    devtool: isDev ? 'source-map' : '',
+    devtool: 'source-map',
     devServer: {
         open: true
     }
